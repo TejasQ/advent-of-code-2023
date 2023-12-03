@@ -25,7 +25,16 @@ export const turnWordsIntoDigits = (line: string) => {
 
     for (const char of chars) {
         partialLine += char;
-        partialLine = partialLine.replace("one", "1ne").replace("two", "2wo").replace("three", "3hree").replace("four", "4our").replace("five", "5ive").replace("six", "6ix").replace("seven", "7even").replace("eight", "8ight").replace("nine", "9ine");
+        partialLine = partialLine
+            .replace("one", "1ne")
+            .replace("two", "2wo")
+            .replace("three", "3hree")
+            .replace("four", "4our")
+            .replace("five", "5ive")
+            .replace("six", "6ix")
+            .replace("seven", "7even")
+            .replace("eight", "8ight")
+            .replace("nine", "9ine");
     };
 
     return partialLine;
